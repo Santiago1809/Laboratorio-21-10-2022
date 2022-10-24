@@ -72,11 +72,11 @@ namespace Rattlehead313
             String nombre;
             nombre = Console.ReadLine();
             Console.WriteLine("Hola " + nombre);
-            
+
             Console.WriteLine("Escriba su edad en números");
             int edad;
             edad = int.Parse(Console.ReadLine());
-      
+
             Console.WriteLine("Dijite su especie tal como se le muestra: can, felino, vulpino, ofidio, quiróptero, ornitorrinco, humano");
             String especie = Console.ReadLine();
             switch (especie)
