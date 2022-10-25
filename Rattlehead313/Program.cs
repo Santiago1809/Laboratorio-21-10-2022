@@ -10,7 +10,7 @@ namespace Rattlehead313
     {
         public static void Main()
         {
-            int tiempoEspera = 650;
+            int tiempoEspera = 250;
             Console.WriteLine("(0.0)\r\n" +
                 "|||");
             Thread.Sleep(tiempoEspera);
@@ -73,7 +73,7 @@ namespace Rattlehead313
             Console.Clear();
             Console.WriteLine("Ingrese su contraseña");
             String contraseña = Console.ReadLine();
-            while(nombre!="" && contraseña != "")
+            while(nombre!="arnolchuaseneguer" && contraseña != "1234")
             {
                 Console.WriteLine("Ingrese su nombre de usuario\r\n");
                 nombre = Console.ReadLine();
@@ -138,8 +138,8 @@ namespace Rattlehead313
                         break;
                     }
             }
-            Console.WriteLine("Dijite su altura en centímetros (176)");
-            int Altura = int.Parse(Console.ReadLine());
+            Console.WriteLine("Dijite su altura en metros (1.89)");
+            float Altura = float.Parse(Console.ReadLine());
             Console.WriteLine("Dijite su peso");
             double Peso = double.Parse(Console.ReadLine());
             Console.WriteLine("Ingrese su dirección:");
