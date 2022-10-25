@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Security.Cryptography;
 using System.Threading;
 using static System.Net.Mime.MediaTypeNames;
@@ -45,8 +45,7 @@ namespace Rattlehead313
                 "|||");
             Thread.Sleep(tiempoEspera);
             Console.Clear();
-            //TODO: Inicio de seción no realizado//
-            Console.WriteLine("Ingrese su nombre, y después presione 'Enter'\r\n");
+            Console.WriteLine("Ingrese su nombre de usuario, y después presione 'Enter'\r\n");
             Console.WriteLine("                            .                                            .                            ");
             Console.WriteLine("     *   .                  .              .        .   *          .                                  ");
             Console.WriteLine("  .         .                     .       .           .      .        .                               ");
@@ -72,11 +71,27 @@ namespace Rattlehead313
             String nombre;
             nombre = Console.ReadLine();
             Console.Clear();
+            Console.WriteLine("Ingrese su contraseña");
+            String contraseña = Console.ReadLine();
+            while(nombre!="" && contraseña != "")
+            {
+                Console.WriteLine("Ingrese su nombre de usuario\r\n");
+                nombre = Console.ReadLine();
+                Console.Clear();
+                Console.WriteLine("Ingrese su contraseña");
+                contraseña = Console.ReadLine();
+            }
             Console.WriteLine("¡Hola " + nombre+"!");
 
             Console.WriteLine("Escriba su edad en números");
-            int edad;
-            edad = int.Parse(Console.ReadLine());
+            string pedirEdad;
+            pedirEdad = Console.ReadLine();
+            Int64 edad;
+            while (_ = Int64.TryParse(pedirEdad, out edad)==false)
+            {
+                Console.WriteLine("Escriba su edad en números");
+                pedirEdad = Console.ReadLine();
+            }
 
             Console.WriteLine("Dijite su especie tal como se le muestra: can, felino, vulpino, ofidio, quiróptero, ornitorrinco, humano");
             String especie = Console.ReadLine();
