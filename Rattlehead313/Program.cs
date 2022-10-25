@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Security.Cryptography;
 using System.Threading;
 using static System.Net.Mime.MediaTypeNames;
@@ -10,7 +10,6 @@ namespace Rattlehead313
     {
         public static void Main()
         {
-            //TODO: Inicio de seción no realizado//
             int tiempoEspera = 650;
             Console.WriteLine("(0.0)\r\n" +
                 "|||");
@@ -46,6 +45,7 @@ namespace Rattlehead313
                 "|||");
             Thread.Sleep(tiempoEspera);
             Console.Clear();
+            //TODO: Inicio de seción no realizado//
             Console.WriteLine("Ingrese su nombre, y después presione 'Enter'\r\n");
             Console.WriteLine("                            .                                            .                            ");
             Console.WriteLine("     *   .                  .              .        .   *          .                                  ");
@@ -71,12 +71,13 @@ namespace Rattlehead313
             Console.WriteLine("   --__                      ___-- ^ ^--__                                                            ");
             String nombre;
             nombre = Console.ReadLine();
-            Console.WriteLine("Hola " + nombre);
-            
+            Console.Clear();
+            Console.WriteLine("¡Hola " + nombre+"!");
+
             Console.WriteLine("Escriba su edad en números");
             int edad;
             edad = int.Parse(Console.ReadLine());
-      
+
             Console.WriteLine("Dijite su especie tal como se le muestra: can, felino, vulpino, ofidio, quiróptero, ornitorrinco, humano");
             String especie = Console.ReadLine();
             switch (especie)
@@ -128,6 +129,7 @@ namespace Rattlehead313
             double Peso = double.Parse(Console.ReadLine());
             Console.WriteLine("Ingrese su dirección:");
             String direccion = Console.ReadLine();
+            Console.Clear();
             Console.WriteLine("Ingrese su planeta:");
             String[] planetas = new string[8];
             planetas[0] = "Mercurio";
@@ -149,6 +151,7 @@ namespace Rattlehead313
             {
                 case "mercurio":
                     {
+                        Console.Clear();
                         direccion += ", Mercurio";
                         energiaP = (float)(Altura * Peso * 3.7);
                         Console.WriteLine("Hola " + nombre + ", eres " + especie + ", tienes " + edad + " años . Estás en el planeta " + Planeta + ", vives en " + direccion + " y tu energía potencial es " + energiaP);
@@ -157,6 +160,7 @@ namespace Rattlehead313
                     }
                 case "venus":
                     {
+                        Console.Clear();
                         direccion += ", Venus";
                         energiaP = (float)(Altura * Peso * 8.87);
                         Console.WriteLine("Hola " + nombre + ", eres " + especie + ", tienes " + edad + " años . Estás en el planeta " + Planeta + ", vives en " + direccion + " y tu energía potencial es " + energiaP); Console.ReadKey();
@@ -164,6 +168,7 @@ namespace Rattlehead313
                     }
                 case "tierra":
                     {
+                        Console.Clear();
                         direccion += ", Tierra";
                         energiaP = (float)(Altura * Peso * 9.8);
                         Console.WriteLine("Hola " + nombre + ", eres " + especie + ", tienes " + edad + " años . Estás en el planeta " + Planeta + ", vives en " + direccion + " y tu energía potencial es " + energiaP); Console.ReadKey();
@@ -171,6 +176,7 @@ namespace Rattlehead313
                     }
                 case "marte":
                     {
+                        Console.Clear();
                         direccion += ", Marte";
                         energiaP = (float)(Altura * Peso * 3.721);
                         Console.WriteLine("Hola " + nombre + ", eres " + especie + ", tienes " + edad + " años . Estás en el planeta " + Planeta + ", vives en " + direccion + " y tu energía potencial es " + energiaP); Console.ReadKey();
@@ -178,6 +184,7 @@ namespace Rattlehead313
                     }
                 case "jupiter":
                     {
+                        Console.Clear();
                         direccion += ", Jupiter";
                         energiaP = (float)(Altura * Peso * 24.79);
                         Console.WriteLine("Hola " + nombre + ", eres " + especie + ", tienes " + edad + " años . Estás en el planeta " + Planeta + ", vives en " + direccion + " y tu energía potencial es " + energiaP); Console.ReadKey();
@@ -185,6 +192,7 @@ namespace Rattlehead313
                     }
                 case "saturno":
                     {
+                        Console.Clear();
                         direccion += ", Saturno";
                         energiaP = (float)(Altura * Peso * 10.44);
                         Console.WriteLine("Hola " + nombre + ", eres " + especie + ", tienes " + edad + " años . Estás en el planeta " + Planeta + ", vives en " + direccion + " y tu energía potencial es " + energiaP); Console.ReadKey();
@@ -192,6 +200,7 @@ namespace Rattlehead313
                     }
                 case "urano":
                     {
+                        Console.Clear();
                         direccion += ", Urano";
                         energiaP = (float)(Altura * Peso * 8.87);
                         Console.WriteLine("Hola " + nombre + ", eres " + especie + ", tienes " + edad + " años . Estás en el planeta " + Planeta + ", vives en " + direccion + " y tu energía potencial es " + energiaP); Console.ReadKey();
@@ -199,6 +208,7 @@ namespace Rattlehead313
                     }
                 case "neptuno":
                     {
+                        Console.Clear();
                         direccion += ", Neptuno";
                         energiaP = (float)(Altura * Peso * 11.15);
                         Console.WriteLine("Hola " + nombre + ", eres " + especie + ", tienes " + edad + " años . Estás en el planeta " + Planeta + ", vives en " + direccion + " y tu energía potencial es " + energiaP); Console.ReadKey();
