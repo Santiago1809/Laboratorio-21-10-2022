@@ -10,7 +10,6 @@ namespace Rattlehead313
     {
         public static void Main()
         {
-            //TODO: Inicio de seción no realizado//
             int tiempoEspera = 650;
             Console.WriteLine("(0.0)\r\n" +
                 "|||");
@@ -46,6 +45,7 @@ namespace Rattlehead313
                 "|||");
             Thread.Sleep(tiempoEspera);
             Console.Clear();
+            //TODO: Inicio de seción no realizado//
             Console.WriteLine("Ingrese su nombre, y después presione 'Enter'\r\n");
             Console.WriteLine("                            .                                            .                            ");
             Console.WriteLine("     *   .                  .              .        .   *          .                                  ");
