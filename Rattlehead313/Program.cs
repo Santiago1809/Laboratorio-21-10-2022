@@ -10,6 +10,9 @@ namespace Rattlehead313
     {
         public static void Main()
         {
+            Console.ForegroundColor = ConsoleColor.DarkGreen;
+            Console.BackgroundColor = ConsoleColor.Black;
+
             int tiempoEspera = 250;
             Console.WriteLine("(0.0)\r\n" +
                 "|||");
@@ -167,6 +170,7 @@ namespace Rattlehead313
                 case "mercurio":
                     {
                         Console.Clear();
+                        Console.BackgroundColor = ConsoleColor.White;
                         direccion += ", Mercurio";
                         energiaP = (float)(Altura * Peso * 3.7);
                         Console.WriteLine("Hola " + nombre + ", eres " + especie + ", tienes " + edad + " años . Estás en el planeta " + Planeta + ", vives en " + direccion + " y tu energía potencial es " + energiaP);
@@ -184,6 +188,7 @@ namespace Rattlehead313
                 case "tierra":
                     {
                         Console.Clear();
+
                         direccion += ", Tierra";
                         energiaP = (float)(Altura * Peso * 9.8);
                         Console.WriteLine("Hola " + nombre + ", eres " + especie + ", tienes " + edad + " años . Estás en el planeta " + Planeta + ", vives en " + direccion + " y tu energía potencial es " + energiaP); Console.ReadKey();
@@ -192,6 +197,7 @@ namespace Rattlehead313
                 case "marte":
                     {
                         Console.Clear();
+;
                         direccion += ", Marte";
                         energiaP = (float)(Altura * Peso * 3.721);
                         Console.WriteLine("Hola " + nombre + ", eres " + especie + ", tienes " + edad + " años . Estás en el planeta " + Planeta + ", vives en " + direccion + " y tu energía potencial es " + energiaP); Console.ReadKey();
@@ -200,6 +206,7 @@ namespace Rattlehead313
                 case "jupiter":
                     {
                         Console.Clear();
+
                         direccion += ", Jupiter";
                         energiaP = (float)(Altura * Peso * 24.79);
                         Console.WriteLine("Hola " + nombre + ", eres " + especie + ", tienes " + edad + " años . Estás en el planeta " + Planeta + ", vives en " + direccion + " y tu energía potencial es " + energiaP); Console.ReadKey();
@@ -208,6 +215,7 @@ namespace Rattlehead313
                 case "saturno":
                     {
                         Console.Clear();
+
                         direccion += ", Saturno";
                         energiaP = (float)(Altura * Peso * 10.44);
                         Console.WriteLine("Hola " + nombre + ", eres " + especie + ", tienes " + edad + " años . Estás en el planeta " + Planeta + ", vives en " + direccion + " y tu energía potencial es " + energiaP); Console.ReadKey();
@@ -216,6 +224,7 @@ namespace Rattlehead313
                 case "urano":
                     {
                         Console.Clear();
+
                         direccion += ", Urano";
                         energiaP = (float)(Altura * Peso * 8.87);
                         Console.WriteLine("Hola " + nombre + ", eres " + especie + ", tienes " + edad + " años . Estás en el planeta " + Planeta + ", vives en " + direccion + " y tu energía potencial es " + energiaP); Console.ReadKey();
@@ -224,6 +233,7 @@ namespace Rattlehead313
                 case "neptuno":
                     {
                         Console.Clear();
+
                         direccion += ", Neptuno";
                         energiaP = (float)(Altura * Peso * 11.15);
                         Console.WriteLine("Hola " + nombre + ", eres " + especie + ", tienes " + edad + " años . Estás en el planeta " + Planeta + ", vives en " + direccion + " y tu energía potencial es " + energiaP); Console.ReadKey();
